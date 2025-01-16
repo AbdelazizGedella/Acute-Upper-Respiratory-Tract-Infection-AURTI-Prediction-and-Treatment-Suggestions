@@ -1,0 +1,14 @@
+pip install scikit-learn
+cd C:\Users\abdel\Downloads\ai
+python app.py
+
+python -m http.server 8000
+
+http://127.0.0.1:5000/
+
+
+
+
+ngrok config add-authtoken 2pt6USy5bvzlggrmubU4hJdLAwG_6yYrevZsJc8K5LSsL1zA7
+ngrok.exe http 80
+ngrok http 5000

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #1e1e2f;
+            color: #ffffff;
+        }
+        .form-control, .form-control:focus {
+            background-color: #2e2e42;
+            color: white;
+            border: 1px solid #6c757d;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .prediction-box, .retrain-box {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #2e2e42;
+            border: 1px solid #6c757d;
+        }
+        .prediction-item {
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .high-probability {
+            background-color: #28a745; /* Green */
+        }
+        .medium-probability {
+            background-color: #ffc107; /* Yellow */
+        }
+        .low-probability {
+            background-color: #dc3545; /* Red */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center py-4">Disease Prediction Based on Symptoms</h1>
+
+        <!-- Disease Prediction Form -->
+<form method="POST" action="/add_treatment">
+    <input type="text" name="disease" placeholder="Disease" required>
+    <input type="text" name="treatment" placeholder="Treatment" required>
+    <button type="submit">Add Treatment</button>
+</form>
+
+
+        <form method="post">
+            <div class="mb-3">
+                <label for="symptoms" class="form-label">Enter Symptoms (comma-separated):</label>
+                <textarea id="symptoms" name="symptoms" rows="5" class="form-control" placeholder="e.g., cough, fever, headache" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+
+        <!-- Retrain Model Form -->
+        <div class="retrain-box mt-4">
+            <h3>Retrain the Model</h3>
+            <form method="post" action="/train">
+                <div class="mb-3">
+                    <label for="symptoms_train" class="form-label">Enter Symptoms (comma-separated):</label>
+                    <textarea id="symptoms_train" name="symptoms" rows="5" class="form-control" placeholder="e.g., cough, fever, headache" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="disease" class="form-label">Enter Disease Name:</label>
+                    <input type="text" id="disease" name="disease" class="form-control" placeholder="Disease Name" required />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Retrain Model</button>
+            </form>
+        </div>
+
+        {% if log %}
+        <div class="prediction-box mt-4">
+          <h4>Prediction Results:</h4>
+<p><strong>Predicted Disease:</strong> {{ log.predicted_class }}</p>
+<p><strong>Confidence:</strong> {{ log.confidence }}%</p>
+
+<h4>Treatment Recommendations:</h4>
+<ul>
+    {% for treatment in log.treatment_recommendations %}
+        <li>{{ treatment }}</li>
+    {% endfor %}
+</ul>
+
+<h4>Class Probabilities:</h4>
+<ul>
+    {% for prediction in log.prediction_data %}
+        <li class="prediction-item {% if prediction.probability == log.max_probability %}high-probability{% elif prediction.probability == log.min_probability %}low-probability{% else %}medium-probability{% endif %}">
+            {{ prediction.label }}: {{ prediction.probability }}%
+        </li>
+    {% endfor %}
+</ul>
+
+            <!-- Display Symptoms and Corresponding Diseases Used by the Model -->
+            <h4>Items Detected by the Model:</h4>
+            <ul>
+                {% for item in symptom_disease_pairs %}
+                    <li><strong>{{ item.label }}:</strong> {{ item.text }}</li>
+                {% endfor %}
+            </ul>
+
+            <h4>Confusion Matrix:</h4>
+            {% if log.confusion_matrix_img %}
+                <img src="data:image/png;base64,{{ log.confusion_matrix_img }}" alt="Confusion Matrix" />
+            {% else %}
+                <p>{{ log.confusion_matrix }}</p>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

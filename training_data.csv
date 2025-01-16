@@ -1,0 +1,103 @@
+text,label
+nasal congestion,influenza
+dry cough,influenza
+high fever,influenza
+fatigue,influenza
+muscle aches,influenza
+running nose,common cold
+sore throat,common cold
+sore throat,influenza
+headache,influenza
+chills,influenza
+runny nose,common cold
+sore throat,common cold
+nasal congestion,common cold
+cough,common cold
+sneezing,common cold
+mild fever,common cold
+fatigue,common cold
+nasal congestion,Sinusitis
+headache,Sinusitis
+facial pain,Sinusitis
+sore throat,Sinusitis
+fever,Sinusitis
+yellow mucus,Sinusitis
+loss of smell,Sinusitis
+runny nose,Allergies
+sneezing,Allergies
+itchy eyes,Allergies
+nasal congestion,Allergies
+cough,Allergies
+watery eyes,Allergies
+chest pain,Pneumonia
+shortness of breath,Pneumonia
+cough,Pneumonia
+fatigue,Pneumonia
+fever,Pneumonia
+chills,Pneumonia
+sweating,Pneumonia
+cough,Bronchitis
+wheezing,Bronchitis
+shortness of breath,Bronchitis
+fatigue,Bronchitis
+sore throat,Bronchitis
+red eye bilateral,influenza
+sudden fever,influenza
+fever,bacterial tonsillitis
+running nose,bacterial tonsillitis
+no cough,bacterial tonsillitis
+malaise,bacterial tonsillitis
+yellow tonsillar spots,bacterial tonsillitis
+throat congested with yellow tonsillar spots,bacterial tonsillitis
+Abrupt fever,influenza
+dry cough,influenza
+Myalgia,influenza
+Malaise,influenza
+Altered mental state,influenza
+anorexia,influenza
+malaise,influenza
+rhinitis,common cold
+nasal discharge,common cold
+nasal obstruction,common cold
+malaise,common cold
+low grade fever,common cold
+conjunctivitis,common cold
+pharyngeal erythema,common cold
+normal lung examination,common cold
+acute rhinosinusitis,common cold
+asthma exacerbation,common cold
+purulent anterior nasal discharge,acute sinusitis and rhinosinusitis (ARS)
+purulent or discolored posterior nasal discharge,acute sinusitis and rhinosinusitis (ARS)
+nasal congestion,acute sinusitis and rhinosinusitis (ARS)
+nasal obstruction,acute sinusitis and rhinosinusitis (ARS)
+Facial congestion,acute sinusitis and rhinosinusitis (ARS)
+fullness,acute sinusitis and rhinosinusitis (ARS)
+hyposmia,acute sinusitis and rhinosinusitis (ARS)
+anosmia,acute sinusitis and rhinosinusitis (ARS)
+fever,acute sinusitis and rhinosinusitis (ARS)
+headache,acute sinusitis and rhinosinusitis (ARS)
+ear pain,acute sinusitis and rhinosinusitis (ARS)
+ear pressure,acute sinusitis and rhinosinusitis (ARS)
+ear fullness,acute sinusitis and rhinosinusitis (ARS)
+halitosis,acute sinusitis and rhinosinusitis (ARS)
+dental pain,acute sinusitis and rhinosinusitis (ARS)
+fatigue,acute sinusitis and rhinosinusitis (ARS)
+cheekbone erythema,acute sinusitis and rhinosinusitis (ARS)
+cheekbone edema,acute sinusitis and rhinosinusitis (ARS)
+cheekbone tenderness,acute sinusitis and rhinosinusitis (ARS)
+mucosal edema,acute sinusitis and rhinosinusitis (ARS)
+narrowing of middle meatus,acute sinusitis and rhinosinusitis (ARS)
+inferior turbinate hypertrophy,acute sinusitis and rhinosinusitis (ARS)
+Acute onset of fever,acute bronchitis
+myalgia,acute bronchitis
+chills,acute bronchitis
+cough,acute bronchitis
+headache,acute bronchitis
+sore throat,acute bronchitis
+smell and taste changes,acute bronchitis
+smell changes,acute bronchitis
+taste changes,acute bronchitis
+Cough >2 weeks,acute bronchitis
+Cough more than 2 weeks,acute bronchitis
+inspiratory whoop,acute bronchitis
+post-tussive emesis,acute bronchitis
