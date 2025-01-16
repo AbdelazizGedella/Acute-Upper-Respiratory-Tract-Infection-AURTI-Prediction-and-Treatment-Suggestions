@@ -29,6 +29,7 @@ _Download the Agent then run these codes:_
 - ngrok http 5000
 
 This open-source initiative invites contributions to improve prediction accuracy and expand the range of treatment options.
+
 ***
 
 **Train Panel for Signs & Symptoms and Treatment Options**
@@ -37,7 +38,9 @@ _This section enables users to:_
 - Input treatment options related to each disease for better recommendations.
 - Utilize machine learning models to learn from the provided data, improving the accuracy of disease prediction and treatment suggestions.
 <img width="1279" alt="Homepage" src="https://github.com/user-attachments/assets/91dc59b9-cdd2-41fe-9b63-6493374ac27e" />
+
 ***
+
 **Enter the Encounter Description for the Patient**
 _Steps:_
 - Input the patient's encounter details in the provided text box.
@@ -45,7 +48,9 @@ _Steps:_
 - Press the Predict button to initiate the analysis.
 The system processes the input and predicts the likely diseases along with their probabilities. The predictions are dynamically updated as additional data is added during the patient visit.
 <img width="996" alt="1" src="https://github.com/user-attachments/assets/d887bd19-5843-4b5e-bccb-d53e43d310c3" />
+
 ***
+
 **Class Probabilities for Proper Diagnosis**
 _Key Features:_
 - The system displays the probabilities of each potential disease based on the provided information.
@@ -53,7 +58,9 @@ _Key Features:_
 - Allows users to refine predictions by adding extra details (e.g., lab results or additional symptoms).
 - Ensures transparency by showing the rationale behind the predictions.
 <img width="977" alt="2" src="https://github.com/user-attachments/assets/9506d134-ce26-41e1-9de5-be0c1c85e8ed" />
+
 ***
+
 **Variables for Measuring Disease Probabilities**
 _The system uses variables such as:_
 - Patient’s age, gender, and medical history.
@@ -68,7 +75,9 @@ _The Confusion Matrix is a critical tool to:_
 - Visualize the model’s accuracy by showing true positives, false positives, true negatives, and false negatives.
 - Iteratively enhance the model’s confidence rate, especially for diseases with common symptoms.
 <img width="971" alt="3" src="https://github.com/user-attachments/assets/9e71c256-819c-4a2b-b500-120c338579e3" />
+
 ***
+
 **Future Enhancements**
 - **Data Augmentation:** Expand the dataset with diverse cases to improve model robustness.
 - **User Feedback Loop:** Allow users to validate predictions and provide feedback for continuous learning.
