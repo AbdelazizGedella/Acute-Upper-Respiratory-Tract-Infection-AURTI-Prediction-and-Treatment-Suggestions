@@ -5,7 +5,9 @@ This project aims to build a robust system for predicting Acute Upper Respirator
 By leveraging patient symptoms, medical history, and other clinical inputs, the system offers actionable insights for both diagnosis and management.
 
 **Description**
-The project focuses on creating a platform that simplifies the identification and treatment of AURTI. _It incorporates key features such as:_
+The project focuses on creating a platform that simplifies the identification and treatment of AURTI. 
+
+_It incorporates key features such as:_
 
 - **Symptom-Based Disease Prediction:** Utilizing patient-reported symptoms to identify AURTI and its severity.
 - **Treatment Option Suggestions:** Offering a tailored list of evidence-based treatment options aligned with clinical guidelines.
@@ -33,6 +35,7 @@ This open-source initiative invites contributions to improve prediction accuracy
 ***
 
 **Train Panel for Signs & Symptoms and Treatment Options**
+
 _This section enables users to:_
 - Train the model with specific signs and symptoms associated with different diseases.
 - Input treatment options related to each disease for better recommendations.
@@ -42,7 +45,9 @@ _This section enables users to:_
 ***
 
 **Enter the Encounter Description for the Patient**
+
 _Steps:_
+
 - Input the patient's encounter details in the provided text box.
 - Include signs, symptoms, or other relevant observations.
 - Press the Predict button to initiate the analysis.
@@ -52,7 +57,9 @@ The system processes the input and predicts the likely diseases along with their
 ***
 
 **Class Probabilities for Proper Diagnosis**
+
 _Key Features:_
+
 - The system displays the probabilities of each potential disease based on the provided information.
 - Highlights diseases with similar symptoms to guide further investigation.
 - Allows users to refine predictions by adding extra details (e.g., lab results or additional symptoms).
@@ -62,14 +69,18 @@ _Key Features:_
 ***
 
 **Variables for Measuring Disease Probabilities**
+
 _The system uses variables such as:_
+
 - Patient’s age, gender, and medical history.
 - Specific signs and symptoms input during the session.
 - Lab test results or other diagnostic parameters.
 **Note:** Proper training on the use of these variables is essential to ensure accurate disease probability estimation.
   
 **Confusion Matrix for Enhanced Confidence Rates**
+
 _The Confusion Matrix is a critical tool to:_
+
 - Evaluate the performance of the predictive model.
 - Identify overlapping symptoms between diseases and improve distinction through additional training.
 - Visualize the model’s accuracy by showing true positives, false positives, true negatives, and false negatives.
