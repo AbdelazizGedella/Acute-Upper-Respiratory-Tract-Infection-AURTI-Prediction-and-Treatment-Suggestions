@@ -30,3 +30,9 @@ _Download the Agent then run these codes:_
 - ngrok http 5000
 
 This open-source initiative invites contributions to improve prediction accuracy and expand the range of treatment options.
+
+
+<img width="1279" alt="Homepage" src="https://github.com/user-attachments/assets/91dc59b9-cdd2-41fe-9b63-6493374ac27e" />
+<img width="971" alt="3" src="https://github.com/user-attachments/assets/9e71c256-819c-4a2b-b500-120c338579e3" />
+<img width="977" alt="2" src="https://github.com/user-attachments/assets/9506d134-ce26-41e1-9de5-be0c1c85e8ed" />
+<img width="996" alt="1" src="https://github.com/user-attachments/assets/d887bd19-5843-4b5e-bccb-d53e43d310c3" />
